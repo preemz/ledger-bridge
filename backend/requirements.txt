@@ -1,0 +1,15 @@
+# Pinned to the versions this project was built and verified against. The verification
+# is real: 32 tests pass, the crash-resume run in docs/demo-runbook.md was executed end to
+# end against Temporal 1.33 and PostgreSQL 16, and the console was driven against the live
+# API by scripts/console_check.cjs.
+Django==5.2.17
+djangorestframework==3.18.1
+django-cors-headers==4.9.0
+psycopg[binary]==3.3.6
+temporalio==1.33.0
+requests==2.34.2
+python-dotenv==1.2.3
+
+# Tests only.
+pytest==9.1.1
+pytest-django==4.14.0
